@@ -1,0 +1,167 @@
+:root {
+    --background-color: #1b1b30;
+    --font-color: #f5f6f7;
+    --content-background-color: #fffffe;
+    --content-container-background: #cccccc;
+    --info-background: #f4f3f5;
+    --stat-block-color: #2b52b4;
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+#title-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#title-img{
+    width: 150px;
+}
+
+#title {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+#content-container {
+    background-color: var(--content-background-color);
+    color: #000000;
+    width: 30%;
+    height: 750px;
+    margin: 0 auto 25px; /* Center horizontally and add bottom margin */
+    border-radius: 25px;
+    position: relative; /* Ensure this container is relative for z-index */
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-function-buttons{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#app-function-buttons input {
+    height: 20px;
+    width: 190px;
+    margin-right: 10px;
+}
+
+#app-function-buttons button {
+    background-color: var(--stat-block-color);
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: var(--font-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+
+    border: 2px solid var(--stat-block-color);
+    background-color: white;
+    color: var(--stat-block-color);
+}
+
+#app-function-buttons button:hover {
+    transition: 0.3s;
+    color: var(--font-color);
+    background-color: var(--stat-block-color);
+}
+
+#pokemon-info-background {
+    background-color: var(--info-background);
+    width: 95%;
+    height: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative; /* Make #pokemon-info-background a positioning context */
+}
+
+#pokemon-info {
+    font-family: "Press Start 2P", system-ui;
+    font-size: small;
+    padding: 15px;
+    visibility: hidden;
+}
+
+.pokemon-name-id {
+    margin-bottom: 10px;
+}
+
+#pokemon-name,
+#pokemon-id,
+#weight, 
+#height 
+{
+    /* Display the name and ID on the same line */
+    display: inline-block;
+    margin: 0;
+    /* Optional: Add some margin between them */
+}
+
+#weight, 
+#height {
+    font-size: smaller;
+}
+
+#pokemon-img{
+    display: block;
+    width: 175px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#types {
+    position: absolute; 
+    padding: 5px;
+    bottom: 15px;
+    left: 15px;
+    margin: 0;
+}
+
+#pokemon-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin-top: 10px; /* Optional: Adjust spacing */
+}
+
+#pokemon-stats-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pokemon-stats-left{
+    width: 63%;
+}
+
+#pokemon-stats-right {
+    width: 33%;
+}
+
+
+.stat {
+    margin: 5px 0; /* Optional: Adjust spacing between stats */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stat-block-color);
+    color: var(--font-color);
+    font-family: sans-serif;
+    font-size: large;
+}
+
